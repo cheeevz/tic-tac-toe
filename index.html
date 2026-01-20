@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="board" id="board">
+            <div class="cell" id="0" data-cell></div>
+            <div class="cell" id="1" data-cell></div>
+            <div class="cell" id="2" data-cell></div>
+            <div class="cell" id="3" data-cell></div>
+            <div class="cell" id="4" data-cell></div>
+            <div class="cell" id="5" data-cell></div>
+            <div class="cell" id="6" data-cell></div>
+            <div class="cell" id="7" data-cell></div>
+            <div class="cell" id="8" data-cell></div>
+        </div>
+        <button id="restartButton">Restart Game</button>
+        <div class="scores-container">
+            <div class="score" id="playerXScore">Player X: 0</div>
+            <div class="score" id="draw">Draws: 0</div>
+            <div class="score" id="playerOScore">Player O: 0</div>
+        </div>
+    </div>
+    <form id="playerNamesForm">
+            <div class ="playerX">
+            <label for="playerXName">Player X Name:</label>
+            <input type="text" id="playerXName" name="playerXName" placeholder="enter name">
+            </div>
+            <div class ="playerO">
+            <label for="playerOName">Player O Name:</label>
+            <input type="text" id="playerOName" name="playerOName" placeholder="enter name">
+            </div>
+            <button id="submitNames" type="submit">Set Names</button>
+        </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
